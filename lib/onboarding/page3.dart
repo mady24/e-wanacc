@@ -1,5 +1,4 @@
 import 'package:e_wanacc/onboarding/assets.dart';
-import 'package:e_wanacc/onboarding/circle_image.dart';
 import 'package:flutter/material.dart';
 
 const double IMAGE_SIZE = 300.0;

@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:e_wanacc/dashboard.dart';
 import 'package:e_wanacc/map.dart';
 import 'package:e_wanacc/siteList.dart';
-import 'package:e_wanacc/siteDetails.dart';
-import 'package:e_wanacc/siteEdit.dart';
 import 'package:e_wanacc/qrScan.dart';
 import 'package:e_wanacc/parameters.dart';
 import 'package:e_wanacc/onboarding/walktrough.dart';

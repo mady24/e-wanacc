@@ -94,7 +94,7 @@ class _Map extends State<Map>{
     super.dispose();
   }
 
-  void _onAddMarkerButtonPressed(){
+  /*void _onAddMarkerButtonPressed(){
     setState(() {
      _markers.add(Marker(
        markerId: MarkerId(_lastMapPosition.toString()),
@@ -106,7 +106,7 @@ class _Map extends State<Map>{
          icon: BitmapDescriptor.defaultMarker,
        )); 
     });
-  }
+  }*/
 
   @override
   Widget build(BuildContext context){

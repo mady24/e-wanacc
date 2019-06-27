@@ -1,12 +1,9 @@
 import 'dart:async';
 
-import 'package:e_wanacc/dashboard.dart';
-import 'package:e_wanacc/qrScan.dart';
 import 'package:flutter/material.dart';
 import 'package:e_wanacc/site.dart';
 import 'package:e_wanacc/font_awesome_flutter.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:e_wanacc/qrScan.dart';
 import 'package:geolocator/geolocator.dart';
 
 class SiteEdit extends StatefulWidget{

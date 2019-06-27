@@ -28,7 +28,7 @@ class _WalkthroughScreen extends State<WalkthroughScreen> {
 
   @override
   Widget build(BuildContext context) {
-    bool isDone = page == _pages.length - 1;
+    //bool isDone = page == _pages.length - 1;
     return new Scaffold(
       backgroundColor: Colors.transparent,
       body: new Stack(

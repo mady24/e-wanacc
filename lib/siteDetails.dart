@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:e_wanacc/font_awesome_flutter.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:e_wanacc/site.dart';
 import 'package:e_wanacc/siteEdit.dart';
@@ -85,7 +84,7 @@ class _SiteDetail extends State<SiteDetail>{
          icon: BitmapDescriptor.defaultMarker,
        )); 
     });
-    new Timer.periodic(Duration(seconds: 5), (Timer t) => setState((){
+    new Timer.periodic(Duration(seconds: 10), (Timer t) => setState((){
       FirebaseDatabase.instance.reference().child('site').child(widget.site.id).once().then((DataSnapshot snapshot){
           site = new Site.fromSnapshot(snapshot);
 

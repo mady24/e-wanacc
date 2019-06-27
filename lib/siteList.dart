@@ -27,7 +27,7 @@ class _SiteList extends State<SiteList>{
 
     items = new List();
     _onSiteAddedSubscription = sites.onChildAdded.listen(_onSiteAdded);
-    new Timer.periodic(Duration(seconds: 5), (Timer t) => setState((){
+    new Timer.periodic(Duration(seconds: 10), (Timer t) => setState((){
       items = new List();
     _onSiteAddedSubscription = sites.onChildAdded.listen(_onSiteAdded);
     }));

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:e_wanacc/loginsignup/authentication.dart';
-import 'package:e_wanacc/font_awesome_flutter.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class Connexion extends StatefulWidget{

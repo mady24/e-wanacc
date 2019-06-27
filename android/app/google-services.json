@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "235038997489",
+    "firebase_url": "https://e-wanacc.firebaseio.com",
+    "project_id": "e-wanacc",
+    "storage_bucket": "e-wanacc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235038997489:android:ce994f4466c3408f",
+        "android_client_info": {
+          "package_name": "com.example.e_wanacc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235038997489-0492p0ehbrmipb9jqs65gbbqq7t9bs4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNdN0TfjxUgU7kIa-4RBBJNAsK2lMJm3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235038997489-0492p0ehbrmipb9jqs65gbbqq7t9bs4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

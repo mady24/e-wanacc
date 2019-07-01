@@ -23,6 +23,10 @@ class _SiteEdit extends State<SiteEdit>{
   TextEditingController _longSiteController;
   TextEditingController _latSiteController;
   TextEditingController _etatSiteController;
+  TextEditingController _villageController;
+  TextEditingController _typeOuvrageController;
+  TextEditingController _sysLavMainContoller;
+  TextEditingController _popMenageController;
   Position currentLocation;
   var _center,_center1;
 
@@ -59,6 +63,10 @@ class _SiteEdit extends State<SiteEdit>{
       _longSiteController = new TextEditingController(text: widget.site.longitude);
       _latSiteController = new TextEditingController(text: widget.site.lattitude);
       _etatSiteController = new TextEditingController(text: widget.site.etat);
+      _villageController = new TextEditingController(text: widget.site.village);
+      _typeOuvrageController = new TextEditingController(text: widget.site.typeOuvrage);
+      _sysLavMainContoller = new TextEditingController(text: widget.site.sysLavMain);
+      _popMenageController = new TextEditingController(text: widget.site.popMenage);
     });
     super.initState();
   }
@@ -75,7 +83,7 @@ class _SiteEdit extends State<SiteEdit>{
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text('Nom du Site', style: TextStyle(color: Colors.black, fontFamily: 'Cambria', fontSize: 20.0, fontWeight: FontWeight.w500),),
+                Text('Nom', style: TextStyle(color: Colors.black, fontFamily: 'Cambria', fontSize: 20.0, fontWeight: FontWeight.w500),),
                 Container(
                   decoration: BoxDecoration(
                     
@@ -86,6 +94,82 @@ class _SiteEdit extends State<SiteEdit>{
                   keyboardType: TextInputType.text,
                   decoration: null,
                   controller: _nomSiteController,
+                ),
+                ),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('Village', style: TextStyle(color: Colors.grey, fontFamily: 'Cambria', fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),),
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(15.0, 2.0, 15.0, 0.0),
+                  child:TextFormField(
+                  keyboardType: TextInputType.text,
+                  decoration: null,
+                  controller: _villageController,
+                ),
+                ),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('Type d\'ouvrage', style: TextStyle(color: Colors.grey, fontFamily: 'Cambria', fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),),
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(15.0, 2.0, 15.0, 0.0),
+                  child:TextFormField(
+                  keyboardType: TextInputType.text,
+                  decoration: null,
+                  controller: _typeOuvrageController,
+                ),
+                ),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('existence d\'un systeme de lavage des mains', style: TextStyle(color: Colors.grey, fontFamily: 'Cambria', fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),),
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(15.0, 2.0, 15.0, 0.0),
+                  child:TextFormField(
+                  keyboardType: TextInputType.text,
+                  decoration: null,
+                  controller: _sysLavMainContoller,
+                ),
+                ),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('population du menage', style: TextStyle(color: Colors.grey, fontFamily: 'Cambria', fontSize: 20.0, fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),),
+                Container(
+                  decoration: BoxDecoration(
+                    
+                  ),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(15.0, 2.0, 15.0, 0.0),
+                  child:TextFormField(
+                  keyboardType: TextInputType.text,
+                  decoration: null,
+                  controller: _popMenageController,
                 ),
                 ),
                 ),

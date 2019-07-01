@@ -161,8 +161,44 @@ class _SiteDetail extends State<SiteDetail>{
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                   children: <Widget>[
-                    Text('Nom:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
+                    Text('Menage:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
                     Text('${site.nomSite}', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.end,),
+                    ],
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                  children: <Widget>[
+                    Text('Village:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
+                    Text('${site.village}', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.end,),
+                    ],
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                  children: <Widget>[
+                    Text('type d\'ouvrage:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
+                    Text('${site.typeOuvrage}', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.end,),
+                    ],
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                  children: <Widget>[
+                    Text('existance d\'un systeme de lavage de main:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
+                    Text('${site.sysLavMain}', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.end,),
+                    ],
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                  children: <Widget>[
+                    Text('Population du menage:', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0)),
+                    Text('${site.popMenage}', style: TextStyle(fontFamily: 'Cambria', fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.end,),
                     ],
                   ),
                 ),

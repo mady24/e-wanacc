@@ -11,6 +11,10 @@ class Site {
   String _etat;
   String _dateservie;
   String _lastdate;
+  String _village;
+  String _typeOuvrage;
+  String _sysLavMain;
+  String _popMenage;
 
   Site(this._id, this._nomSite, this._commune, this._departement, this._region, this._lattitude, this._longitude, this._etat, this._dateservie, this._lastdate);
 
@@ -25,6 +29,10 @@ class Site {
     this._etat = obj['etat'];
     this._dateservie = obj['dateservie'];
     this._lastdate = obj['lastdate'];
+    this._village = obj['village'];
+    this._typeOuvrage = obj['typeOuvrage'];
+    this._sysLavMain = obj['sysLavMain'];
+    this._popMenage = obj['popMenage'];
   }
 
   String get id => _id;
@@ -37,6 +45,10 @@ class Site {
   String get etat => _etat;
   String get dateservie => _dateservie;
   String get lastdate => _lastdate;
+  String get village => _village;
+  String get typeOuvrage => _typeOuvrage;
+  String get sysLavMain => _sysLavMain;
+  String get popMenage => _popMenage;
 
   Site.fromSnapshot(DataSnapshot snapshot){
     _id = snapshot.key;
@@ -49,5 +61,9 @@ class Site {
     _etat = snapshot.value['etat'];
     _dateservie = snapshot.value['dateservie'];
     _lastdate = snapshot.value['lastdate'];
+    _village = snapshot.value['village'];
+    _typeOuvrage = snapshot.value['typeOuvrage'];
+    _sysLavMain = snapshot.value['sysLavMain'];
+    _popMenage = snapshot.value['popMenage'];
   }
 }
